@@ -112,47 +112,61 @@ main{
   background-size: cover;
   background-position: center;
   height:70vh;
-  
 }
-.hero-wrapper {
+.hero-wrapper{
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: -100px;
-  animation: fadeInUp 1.2s ease-out forwards;
-  opacity: 0;
-  padding-left: 50px;
-}
-
-/* Add animation to inner elements with staggered delays */
-.hero-wrapper img,
-.hero-wrapper h1,
-.hero p {
-opacity: 0;
-transform: translateY(30px);
-animation: fadeInUp 3s ease-out forwards;
-}
-
+  padding-top: 250px;
+  color:var(--bd-light);
+ }
+ .hero-wrapper h1{
+  font-size: 5rem;
+  font-weight: 900;
+  animation-delay: 0.4s;
+ }
+ .hero-wrapper img{
+  animation-delay: 0.4s;
+ }
+ .hero-wrapper p{
+  animation-delay: 0.4s;
+  font-size:2rem;
+ }
+ Add animation to inner elements with staggered delays */
 .hero-wrapper img {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 3s ease-out forwards;
   animation-delay: 0.2s;
 }
 
 .hero-wrapper h1 {
-  text-align: center;
-  font-size:3.5rem;
-  color:var(--bd-light);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 3s ease-out forwards;
   animation-delay: 0.4s;
-  font-weight: 900;
 }
-.hero p{
-  color:var(--bd-light);
-  animation-delay: 0.4s;
-  text-align: center;
-  padding-left: -200px;
-  margin-top:-1.9rem;
-  font-size: 1.5rem;
-  font-weight: 500;
+
+.hero-wrapper p {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 3s ease-out forwards;
+  animation-delay: 0.6s;
 }
+
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
 .services{
   text-align: center;
 }
@@ -269,17 +283,6 @@ animation: fadeInUp 3s ease-out forwards;
   margin: 0 auto;
 }
 
-/* Animation Keyframes */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .footer-nav ul{
   display:flex;
@@ -343,24 +346,23 @@ footer{
     
   }
 
-  .hero-wrapper {
-    flex-direction: row;
-    padding-left: 1rem;
-    padding-top: 9rem;
-    text-align: center;
+  .hero {
+    height: 60vh;
   }
-
-  .hero-wrapper h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
-    margin-left: 3rem;
-    margin-top: -0.7rem;
-    width: 300px;
-    font-size: 1rem;
-  }
+.hero-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  color:var(--bd-light);
+ }
+ .hero-wrapper h1{
+  font-size: 1.8rem;
+ }
+ .hero-wrapper p{
+  font-size:0.9rem;
+ }
 
   .services h2,
   .services-2 h2,
@@ -433,22 +435,23 @@ footer{
     display: flex;
     
   }
-  .hero-wrapper {
-    flex-direction: row;
-    margin-left: 2rem;
-    border: 2px solid black;
-    padding: 0;
+ .hero {
+    height: 60vh;
   }
-
-  .hero-wrapper h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1.2rem;
-    /* margin-left: 0;
-    margin-top: -0.4rem; */
-  }
+.hero-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  color:var(--bd-light);
+ }
+ .hero-wrapper h1{
+  font-size: 1.8rem;
+ }
+ .hero-wrapper p{
+  font-size:0.9rem;
+ }
 
   nav ul {
     gap: 1rem;
@@ -511,7 +514,7 @@ footer{
   .hero-wrapper {
     padding-top: 15rem;
     margin-left: 2rem;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -540,14 +543,9 @@ footer{
     width: 100%;
   }
 }
-@media (min-width: 600px) and (max-width: 1366px) and (orientation: landscape){
+@media (min-width: 600px) and (max-width: 1366px) and (orientation: landscape) {
   .hero-wrapper{
-    padding-top: 10rem;
-    margin-left: 10rem;
-  }
-  .hero p{
-    margin-top: -0.5rem;
-    margin-left: -10rem;
+    padding-top: 100px;
   }
 }
 /* ========== MEDIA QUERY: Large desktops and ultra-wide screens (min-width: 1441px) ========== */
@@ -555,27 +553,6 @@ footer{
   header {
     padding: 2.5rem 6rem;
   }
-
-  .hero {
-    height: 85vh;
-  }
-
-  .hero-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 26rem;
-    gap: 2rem;
-  }
-
-  .hero-wrapper h1 {
-    font-size: 7rem;
-  }
-
-  .hero p {
-    font-size: 2.5rem;
-    margin-left: 0;
-  }
-
   .services-3-container {
     gap: 2rem;
     margin-left: 8rem;
@@ -600,5 +577,3 @@ footer{
     font-size: 1.1rem;
   }
 }
-
-

@@ -875,22 +875,6 @@ body {
     gap: 3rem;
   }
 
-  /* Hero Section */
-  /* .hero-wrapper {
-    padding-top: 25rem;
-    gap: 3rem;
-  } */
-
-  .hero-wrapper h1 {
-    font-size: 5.5rem;
-  }
-
-  .hero-wrapper a {
-    font-size: 1.8rem;
-    padding: 1.2rem 3.5rem;
-  }
-
-  /* About Sections */
   .about,
   .about-2,
   .about-3 {
@@ -940,19 +924,9 @@ body {
     padding: 6%;
   }
 
-  /* Locations */
-  .first-location,
-  .second-location {
-    padding: 4rem;
-    gap: 6rem;
-    width: 60%;
-  }
-
-  .first-location h3,
-  .second-location h3 {
-    font-size: 2rem;
-  }
-
+.location-container img{
+  width:40%;
+}
   /* Footer */
   .footer-nav ul {
     gap: 3rem;
