@@ -340,6 +340,7 @@ footer{
 
   .hero p {
     margin-left: 0;
+    margin-top: -0.5rem;
     font-size: 1.1rem;
     padding: 0 1rem;
   }
@@ -440,13 +441,11 @@ footer{
   .hero {
     height: 50vh;
   }
-
-  .hero-wrapper {
+.hero-wrapper {
+    padding-top: 15rem;
+    padding-left: 10rem;
     flex-direction: row;
-    padding: 2rem;
-    margin-left: 0;
-    justify-content: center;
-    text-align: left;
+    align-items: center;
   }
 
   .hero-wrapper h1 {
@@ -454,8 +453,9 @@ footer{
   }
 
   .hero p {
-    font-size: 1.2rem;
-    margin-left: 0;
+    font-size: 1.3rem;
+    margin-top: -0.2rem;
+    padding-left: -2rem;
   }
 
   .team-boardmembers,

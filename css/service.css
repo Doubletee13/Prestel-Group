@@ -345,7 +345,7 @@ footer{
 
   .hero-wrapper {
     flex-direction: row;
-    margin-left: 1rem;
+    padding-left: 1rem;
     padding-top: 9rem;
     text-align: center;
   }
@@ -356,7 +356,10 @@ footer{
 
   .hero p {
     font-size: 0.9rem;
-    margin-left: 0;
+    margin-left: 3rem;
+    margin-top: -0.7rem;
+    width: 300px;
+    font-size: 1rem;
   }
 
   .services h2,
@@ -433,7 +436,8 @@ footer{
   .hero-wrapper {
     flex-direction: row;
     margin-left: 2rem;
-    padding-top: 4rem;
+    border: 2px solid black;
+    padding: 0;
   }
 
   .hero-wrapper h1 {
@@ -442,7 +446,8 @@ footer{
 
   .hero p {
     font-size: 1.2rem;
-    margin-left: 0;
+    /* margin-left: 0;
+    margin-top: -0.4rem; */
   }
 
   nav ul {
@@ -504,8 +509,9 @@ footer{
     
   }
   .hero-wrapper {
+    padding-top: 15rem;
     margin-left: 2rem;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -515,7 +521,8 @@ footer{
 
   .hero p {
     font-size: 1.3rem;
-    margin-left: 0;
+    margin-top: -0.2rem;
+    padding-left: -2rem;
   }
 
   .services-3-container {
@@ -531,6 +538,16 @@ footer{
   .services-3 .services-3-e,
   .services-3 .services-3-f {
     width: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width: 1366px) and (orientation: landscape){
+  .hero-wrapper{
+    padding-top: 10rem;
+    margin-left: 10rem;
+  }
+  .hero p{
+    margin-top: -0.5rem;
+    margin-left: -10rem;
   }
 }
 /* ========== MEDIA QUERY: Large desktops and ultra-wide screens (min-width: 1441px) ========== */
