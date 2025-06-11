@@ -48,6 +48,9 @@ header {
   width:100%;
   z-index: 1002; 
 }
+.header-homepage-button{
+  text-decoration: none;
+}
 .header-logo{
   display:flex;
   flex-wrap:nowrap;
@@ -185,6 +188,11 @@ main{
   font-size: 2.5rem;
   text-align: center;
   font-weight: 900;
+}
+.office-address p{
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 .office-address .google-map-address iframe{
   width:100%;

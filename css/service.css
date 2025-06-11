@@ -47,6 +47,9 @@ header {
   width:100%;
   z-index: 1002; 
 }
+.header-homepage-button{
+  text-decoration: none;
+}
 .header-logo{
   display:flex;
   flex-wrap:nowrap;
