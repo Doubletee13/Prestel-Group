@@ -177,6 +177,9 @@ animation: fadeInUp 3s ease-out forwards;
   font-weight: 700;
   color: var(--gray);
 }
+.team details:hover{
+ cursor: pointer;
+}
 .team h2{
   text-align: center;
   font-size:3rem ;
