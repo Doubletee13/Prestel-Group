@@ -121,7 +121,7 @@ main{
   justify-content: space-between;
   gap: 2rem;
   align-items: center;
-  padding-top: 15rem;
+  padding-top: 20rem;
   animation: fadeInUp 1.2s ease-out forwards;
   opacity: 0;
 }
@@ -456,7 +456,7 @@ body {
     font-size: 1rem;
   }
 .hero-wrapper{
-  padding-top: 6em;
+  padding-top: 8rem;
 }
   .about-section,
   .about-section-2,
@@ -572,7 +572,7 @@ body {
   }
  
   .hero-wrapper{
-    padding-top: 5rem;
+    padding-top: 8rem;
   }
   .hero-wrapper h1 {
     margin-top: -1.5rem;
@@ -678,7 +678,7 @@ body {
     
   }
  .hero-wrapper{
-  padding-top: 280px;
+  padding-top: 300px;
  }
 
   .hero-wrapper h1 {
