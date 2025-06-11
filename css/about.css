@@ -113,16 +113,16 @@ main{
   background-size: cover;
   background-position: center;
   height:70vh;
-  
 }
 .hero-wrapper {
   display: flex;
   gap: 1rem;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 800px;
   animation: fadeInUp 1.2s ease-out forwards;
   opacity: 0;
-  margin-left: 500px;
+  padding-left: 150px;
+  
 }
 
 /* Add animation to inner elements with staggered delays */
@@ -149,10 +149,11 @@ animation: fadeInUp 3s ease-out forwards;
   color:var(--bd-light);
   animation-delay: 0.4s;
   text-align: center;
-  margin-left: 380px;
-  margin-top:-0.5rem;
+  padding-left: 300px;
+  margin-top:-1.5rem;
   font-size: 1.5rem;
   font-weight: 500;
+  
 }
 
 /* Animation Keyframes */
